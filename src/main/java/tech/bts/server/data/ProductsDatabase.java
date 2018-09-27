@@ -14,9 +14,11 @@ public class ProductsDatabase {
         Product p1 = new Product("iPhone", 1200);
         Product p2 = new Product("TV", 500);
         Product p3 = new Product("pen", 2);
+        Product p4 = new Product("Macbook", 2000);
+        Product p5 = new Product("Charger", 50);
 
         // Create list
-        this.products = Arrays.asList(p1, p2, p3);
+        this.products = Arrays.asList(p1, p2, p3, p4, p5);
     }
 
     public List<Product> getProducts() {
