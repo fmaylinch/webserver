@@ -44,7 +44,7 @@ public class ProductsController {
         */
 
         // 2- Get the HTML template
-        InputStream inputStream = ClassLoader.getSystemResourceAsStream("products.html");
+        InputStream inputStream = ClassLoader.getSystemResourceAsStream("products.hb.html");
         StringWriter writer = new StringWriter();
         IOUtils.copy(inputStream, writer, "UTF-8");
         String html = writer.toString();
