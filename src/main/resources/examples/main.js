@@ -5,7 +5,8 @@
 //arrays();
 //objects();
 //classes();
-events();
+dom();
+//events();
 
 /** Basics: variables, if, while, for */
 function basics() {
@@ -140,6 +141,26 @@ function classes() {
 
     console.log(car);
     console.log(car2);
+}
+
+/**
+ * Access and modify the DOM (Document Object Model). That means modifying the web page.
+ * The DOM is the internal representation of the web page.
+ * The browser creates the DOM from the HTML.
+ */
+function dom() {
+
+    // Get an element and modify its content
+    let text = document.getElementById("text");
+    text.textContent = "Message set from JavaScript";
+
+    // Create a new element (paragraph) and set its content
+    let paragraph = document.createElement("p");
+    paragraph.textContent = "This is a new paragraph";
+
+    // Add the paragraph to an existing element in the page, so it's visible
+    let container = document.getElementById("container");
+    container.appendChild(paragraph);
 }
 
 /** Events, executing a function when some event occurs */
