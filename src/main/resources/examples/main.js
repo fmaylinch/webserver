@@ -13,13 +13,13 @@ dom();
 function basics() {
 
     // var message = "hello js"; // var is the old keyword
-    let name = "Ferran";
-    let school = "BTS";
+    const name = "Ferran";
+    const school = "BTS";
 
     console.log("I'm " + name + " and I'm in " + school);
     console.log(`I'm ${name} and I'm in ${school}`);
 
-    let age = 20;
+    const age = 20;
 
     if (age >= 18) {
         console.log("adult");
