@@ -6,8 +6,10 @@
 //arrays();
 //objects();
 //classes();
-dom();
+//dom();
 //events();
+input();
+
 
 /** Basics: variables, if, while, for */
 function basics() {
@@ -234,3 +236,30 @@ function events() {
     }
 }
 
+/**
+ * Use addEventListener and arrow functions
+ * Use const if variable doesn’t change
+ * Use good names
+ * Use string interpolation
+ *
+ * In the HTML, write an <input> and a <button>.
+ *
+ * Write your name here: [    ] (ok)
+ * Hello NAME! (displayed when button is clicked)
+ *
+ */
+function input() {
+
+    const okButton = document.getElementById("ok-button");
+    okButton.addEventListener("click", function() {
+
+        const nameInput = document.getElementById("name-input");
+        const name = nameInput.value;
+
+        const p = document.createElement("p");
+        p.textContent = `Hello ${name}!`; // "Hello " + name + "!";
+
+        const container = document.getElementById("container");
+        container.appendChild(p);
+    });
+}
