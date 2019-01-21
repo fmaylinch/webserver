@@ -2,6 +2,7 @@
 // --- Call the functions you want to try ---
 //basics();
 //functions();
+//functions2();
 //arrays();
 //objects();
 //classes();
@@ -52,6 +53,38 @@ function functions() {
     function sum(x, y) {
         return x + y;
     }
+}
+
+/** Functions, anonymous functions and arrow functions */
+function functions2() {
+
+    function sayHello(name) {
+
+        console.log("Hello " + name);
+    }
+
+    let sayHi = function(name) {
+
+        console.log("Hi " + name);
+    };
+
+    let sayBye = (name) => {
+
+        console.log("bye " + name);
+    };
+
+    sayHello("class");
+    sayHi("again");
+    sayBye("people");
+
+    let sum1 = function(a,b) {
+        return a + b;
+    };
+
+    let sum2 = (a,b) => a + b;
+
+    console.log( "sum: " + sum1(2, 3) );
+    console.log( "sum: " + sum2(2, 3) );
 }
 
 /** Arrays, creating, adding (push), looping */
