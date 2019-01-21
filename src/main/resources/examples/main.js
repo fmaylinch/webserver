@@ -204,10 +204,8 @@ function events() {
     button.textContent = "Display products";
 
     // Listen to clicks on the button
-    button.onclick = function () {
-        console.log("Button was clicked!");
-        displayProducts();
-    };
+    button.addEventListener("click", displayProducts);
+    //button.onclick = displayProducts;
 
     // Add the button to the web page
     let container = document.getElementById("container");
